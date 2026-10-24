@@ -1,0 +1,5 @@
+# 音乐列表：把 mp3 放到 static/music/ 下，在这里登记即可自动出现在页脚播放器
+# - title: 曲名
+#   src: /music/xxx.mp3
+#   meta: 演奏者/备注（可省）
+[]

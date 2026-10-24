@@ -1,0 +1,36 @@
+{{- $list := site.Data.music -}}
+{{- if $list }}
+<div class="player" id="player">
+  <button id="pbtn" type="button" aria-label="播放/暂停">▶</button>
+  <span id="ptitle">—</span>
+  <span class="pmeta" id="pmeta"></span>
+  <button id="pnext" type="button" aria-label="下一首">⏭</button>
+</div>
+<audio id="paudio" preload="none"></audio>
+<script>
+(function(){
+  var tracks = {{ $list | jsonify | safeJS }}, i = 0,
+      a = document.getElementById('paudio'),
+      b = document.getElementById('pbtn'),
+      n = document.getElementById('pnext'),
+      t = document.getElementById('ptitle'),
+      m = document.getElementById('pmeta');
+  if (!tracks.length) return;
+  function load(k){
+    var x = tracks[k];
+    a.src = x.src;
+    t.textContent = x.title || x.src.split('/').pop();
+    m.textContent = x.meta ? ' · ' + x.meta : '';
+  }
+  function play(){
+    if (!a.src) load(i);
+    if (a.paused) { a.play(); b.textContent = '❚❚'; }
+    else { a.pause(); b.textContent = '▶'; }
+  }
+  b.onclick = play;
+  n.onclick = function(){ i = (i+1) % tracks.length; load(i); a.play(); b.textContent='❚❚'; };
+  a.onended = function(){ i = (i+1) % tracks.length; load(i); a.play(); };
+  load(0);
+})();
+</script>
+{{- end }}

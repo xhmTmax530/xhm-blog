@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: xhmTmax530/xhm-blog
+  branch: main
+  # 用 GitHub Personal Access Token 登录（无需 OAuth 服务器）
+  auth_methods: [token]
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+locale: zh_Hans
+site_url: https://blog.agentxx.xyz
+display_url: https://blog.agentxx.xyz
+
+collections:
+  - name: posts
+    label: 文章
+    label_singular: 文章
+    folder: content/posts
+    create: true
+    slug: "{{year}}{{month}}{{day}}-{{slug}}"
+    format: frontmatter
+    fields:
+      - { name: title, label: 标题, widget: string }
+      - { name: date, label: 日期, widget: datetime, date_format: "YYYY-MM-DD", time_format: "HH:mm", format: "YYYY-MM-DDTHH:mm:ss+08:00" }
+      - { name: draft, label: 草稿, widget: boolean, default: false }
+      - { name: categories, label: 分类, widget: list, required: false, default: [] }
+      - { name: tags, label: 标签, widget: list, required: false, default: [] }
+      - { name: body, label: 正文, widget: markdown }
+  - name: pages
+    label: 单页
+    files:
+      - { name: about, label: 关于, file: content/about.md, fields: [{ name: title, label: 标题, widget: string }, { name: body, label: 正文, widget: markdown }] }
+      - { name: home, label: 首页文案, file: content/_index.md, fields: [{ name: title, label: 标题, widget: string }, { name: body, label: 正文, widget: markdown }] }
+  - name: settings
+    label: 站点设置
+    files:
+      - name: music
+        label: 音乐列表
+        file: data/music.yaml
+        fields:
+          - name: items
+            label: 曲目
+            widget: list
+            required: false
+            fields:
+              - { name: title, label: 曲名, widget: string }
+              - { name: src, label: 文件路径（如 /music/x.mp3）, widget: string }
+              - { name: meta, label: 备注, widget: string, required: false }

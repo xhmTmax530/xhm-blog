@@ -1,0 +1,12 @@
+  <footer>
+  {{ partial "foot_custom.html" . }}
+  {{ with .Site.Params.footer }}
+  <hr/>
+  {{ replace . "{Year}" now.Year | markdownify }}
+  {{ end }}
+  {{ if .Site.Params.music }}
+  {{ partial "player.html" . }}
+  {{ end }}
+  </footer>
+  </body>
+</html>

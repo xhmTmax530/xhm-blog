@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ range .Site.RegularPages.GroupByDate "2006" }}
+<h2>{{ .Key }}</h2>
+<ul>
+  {{ range .Pages }}
+  <li><span class="date">{{ .Date.Format "01/02" }}</span><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}
+{{ partial "footer.html" . }}

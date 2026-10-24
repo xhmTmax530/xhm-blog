@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title | markdownify }}</h1>
+<ul>
+  {{ range .Data.Terms.Alphabetical }}
+  <li>
+    <span class="date">{{ .Count }}</span>
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ partial "footer.html" . }}

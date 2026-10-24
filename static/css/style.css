@@ -1,0 +1,74 @@
+/* —— 2008 风格：窄栏 · 衬线 · 无圆角 · 无动画 —— */
+:root{
+  --fg:#222; --bg:#fdfdfb; --muted:#888; --line:#ddd; --link:#0645ad;
+}
+* { box-sizing: border-box; }
+body{
+  max-width: 680px;
+  margin: 3.5rem auto 5rem;
+  padding: 0 1.2rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+  font-size: 17px;
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+}
+/* 导航 */
+.menu{ padding:0; margin:0 0 .4rem; text-align:left; }
+.menu li{ display:inline-block; margin-right:1.2rem; }
+.menu a{ background:none; padding:0; border-radius:0; color:var(--fg); text-decoration:none; font-size:15px; }
+.menu a:hover{ text-decoration:underline; }
+nav hr{ display:none; }
+/* 标题 */
+h1{ font-size:1.5rem; font-weight:600; line-height:1.5; margin:2.4rem 0 1.2rem; letter-spacing:.02em; }
+h2{ font-size:1.24rem; font-weight:600; margin:2.2rem 0 .7rem; }
+h3{ font-size:1.06rem; font-weight:600; margin:2rem 0 .6rem; }
+h4,h5,h6{ font-size:1rem; font-weight:600; margin:1.6rem 0 .5rem; }
+p{ margin:1.05rem 0; }
+/* 链接 */
+a{ color:var(--link); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+/* 列表页 */
+ul{ padding-left:1.2rem; }
+li{ margin:.45rem 0; }
+.date{ color:var(--muted); font-size:14px; font-family:Menlo,Consolas,monospace; margin-right:.8rem; }
+/* 文章内链接与图 */
+img{ max-width:100%; height:auto; display:block; margin:1.6rem auto; }
+hr{ border:0; border-top:1px solid var(--line); margin:2.6rem 0; }
+blockquote{ margin:1.6rem 0; padding:.2rem 0 .2rem 1rem; border-left:3px solid var(--line); color:#555; }
+/* 代码 */
+code{ font-family:Menlo,Consolas,"Courier New",monospace; font-size:.9em; background:#f4f3ee; padding:.1em .35em; }
+pre{ background:#f7f6f2; border:1px solid var(--line); padding:1rem; overflow-x:auto; line-height:1.65; }
+pre code{ background:none; padding:0; font-size:.86em; }
+/* 文章页脚 meta */
+.article-meta{ background:none; padding:0; margin:2rem 0 0; color:var(--muted); font-size:13.5px; text-align:left; }
+footer{ text-align:center; color:var(--muted); font-size:13px; margin-top:4rem; }
+footer a{ color:var(--muted); }
+
+/* —— 极简壁纸：默认用纸纹渐变，想换成照片就放开下面一行 —— */
+body{
+  background-color: #fdfdfb;
+  background-image:
+    radial-gradient(1200px 600px at 50% -200px, #ffffff 0%, #fdfdfb 60%);
+}
+/* body{ background-image: url("/img/bg.jpg"); background-size: cover; background-attachment: fixed; } */
+
+/* —— 页脚播放器 —— */
+.player{
+  margin: 2.4rem 0 0; padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  display: flex; align-items: center; gap: .7rem;
+  font-size: 13.5px; color: var(--muted);
+}
+.player button{
+  background: none; border: 1px solid var(--line); color: #555;
+  width: 26px; height: 26px; border-radius: 50%;
+  cursor: pointer; font-size: 11px; line-height: 1; padding: 0;
+}
+.player button:hover{ border-color: #aaa; color: #222; }
+#ptitle{ color: #444; }
+.pmeta{ color: var(--muted); }
+
+/* —— 分类/归档页微调 —— */
+h2{ margin-top: 2.4rem; }
