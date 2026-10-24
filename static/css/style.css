@@ -49,9 +49,14 @@ footer a{ color:var(--muted); }
 /* —— 极简壁纸：默认用纸纹渐变，想换成照片就放开下面一行 —— */
 body{
   background-color: #fdfdfb;
+  /* 极简纸纹壁纸（内联 SVG，无外部请求，不拖慢加载） */
   background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E"),
     radial-gradient(1200px 600px at 50% -200px, #ffffff 0%, #fdfdfb 60%);
+  background-attachment: fixed;
 }
+/* 想换成自己的照片壁纸：把照片放到 static/img/bg.jpg，然后注释掉上面整段 body 背景，放开下面一行 */
+/* body{ background: #fdfdfb url("/img/bg.jpg") no-repeat center center fixed; background-size: cover; } */
 /* body{ background-image: url("/img/bg.jpg"); background-size: cover; background-attachment: fixed; } */
 
 /* —— 页脚播放器 —— */
