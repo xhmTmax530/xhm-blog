@@ -1,10 +1,17 @@
 ---
-title: "servlet基础知识"
-date: 2025-11-17T23:58:00+08:00
-draft: false 
-categories: ["编程开发"]
-tags: ["Java", "Servlet", "Web开发", "编程"]
+title: servlet基础知识
+date: 2025-11-17 23:58:00+08:00
+draft: false
+categories:
+- 编程开发
+tags:
+- Java
+- Servlet
+- Web开发
+- 编程
+permalink: agent-memory/个人随笔站点/site/content/posts/servlet-基础知识
 ---
+
 # servlet基础知识
 
 作为安全爱好者的基础性研究

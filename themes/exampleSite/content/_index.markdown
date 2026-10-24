@@ -1,5 +1,6 @@
 ---
 title: Home
+permalink: agent-memory/个人随笔站点/site/themes/example-site/content/index
 ---
 
 [<img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/yihui/hugo-xmin)

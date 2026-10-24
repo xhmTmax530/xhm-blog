@@ -1,10 +1,18 @@
 ---
-title: "注解和Map(新手理解)"
-date: 2025-11-21T10:50:00+08:00
-draft: false 
-categories: ["编程开发"]
-tags: ["Java", "java注解", "Web开发", "基础编程", "HashMap"]
+title: 注解和Map(新手理解)
+date: 2025-11-21 10:50:00+08:00
+draft: false
+categories:
+- 编程开发
+tags:
+- Java
+- java注解
+- Web开发
+- 基础编程
+- HashMap
+permalink: agent-memory/个人随笔站点/site/content/posts/注解和-map
 ---
+
 # 注解和Map(新手理解)
 
 把「注解」和「Map」结合起来用，让你明白它们在实际开发中是怎么配合工作的。

@@ -3,10 +3,11 @@ title: Another Note on A blogdown Tutorial
 author: Yihui Xie
 date: '2017-06-14'
 categories:
-  - Example
+- Example
 tags:
-  - Tutorial
+- Tutorial
 slug: another-note
+permalink: agent-memory/个人随笔站点/site/themes/hugo-xmin/example-site/content/note/2017-06-14-another-note
 ---
 
 I just discovered [an awesome tutorial](https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/) on **blogdown** written by Alison. I have to admit this is _the_ best **blogdown** tutorial I have seen so far.

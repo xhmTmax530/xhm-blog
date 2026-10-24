@@ -1,3 +1,9 @@
+---
+permalink: agent-memory/个人随笔站点/site/themes/readme
+title: README
+type: note
+---
+
 # HUGO XMIN
 
 ## _Keep it simple, but not simpler_

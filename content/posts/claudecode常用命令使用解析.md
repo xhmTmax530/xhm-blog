@@ -1,10 +1,17 @@
 ---
-title: "claudecode常用命令使用解析"
-date: 2025-11-17T17:20:00+08:00
-draft: false 
-categories: ["人工智能"]
-tags: ["AI", "Claude", "安全工具", "命令行"]
+title: claudecode常用命令使用解析
+date: 2025-11-17 17:20:00+08:00
+draft: false
+categories:
+- 人工智能
+tags:
+- AI
+- Claude
+- 安全工具
+- 命令行
+permalink: agent-memory/个人随笔站点/site/content/posts/claudecode-常用命令使用解析
 ---
+
 # Claude Code 常用命令使用解析
 
 大家好，作为一个刚接触 Claude Code 的新手，我根据官方文档和一些热门的介绍视频，整理这份学习笔记和实践总结。主要是为了记录自己的学习过程，同时也希望能起到一个抛砖引玉的作用，为同样在入门路上的朋友们提供一些参考和便利。
@@ -505,4 +512,3 @@ RESULT: STDOUT= | STDERR=rm: cannot remove 'non_existent_file.txt': No such file
 - **历史检查点 (Checkpoints)：** 强大的“时间旅行”功能，可以一键将**文件系统状态**和**对话历史**同时回退到之前的某个时间点，是撤销误操作的神器。
 
 ------
-

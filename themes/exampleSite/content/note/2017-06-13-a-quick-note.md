@@ -3,8 +3,9 @@ title: A Quick Note on Two Beautiful Websites
 author: Yihui Xie
 date: '2017-06-13'
 categories:
-  - Example
+- Example
 slug: a-quick-note
+permalink: agent-memory/个人随笔站点/site/themes/example-site/content/note/2017-06-13-a-quick-note
 ---
 
 To me, the two most impressive websites based on **blogdown** are:

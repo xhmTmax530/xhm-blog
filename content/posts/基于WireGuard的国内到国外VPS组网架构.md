@@ -1,9 +1,15 @@
 ---
-title: "基于WireGuard的国内到国外VPS组网架构"
-date: 2025-11-13T18:05:00+08:00
-draft: false 
-categories: ["网络技术"] # 👈 关键：确保分类名称完全匹配
-tags: ["WireGuard", "VPN", "VPS", "组网"] # 你的文章关键词
+title: 基于WireGuard的国内到国外VPS组网架构
+date: 2025-11-13 18:05:00+08:00
+draft: false
+categories:
+- 网络技术
+tags:
+- WireGuard
+- VPN
+- VPS
+- 组网
+permalink: agent-memory/个人随笔站点/site/content/posts/基于-wire-guard-的国内到国外-vps-组网架构
 ---
 
 ## 概述与技术栈建议

@@ -3,14 +3,15 @@ title: A Plain Markdown Post
 author: Yihui Xie
 date: '2016-02-14'
 categories:
-  - Example
-  - Hugo
+- Example
+- Hugo
 tags:
-  - blogdown
-  - Markdown
-  - MathJax
-  - Pandoc
-  - RStudio
+- blogdown
+- Markdown
+- MathJax
+- Pandoc
+- RStudio
+permalink: agent-memory/个人随笔站点/site/themes/hugo-xmin/example-site/content/post/2016-02-14-hello-markdown
 ---
 
 This sample post is mainly for

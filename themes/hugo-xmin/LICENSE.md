@@ -1,3 +1,9 @@
+---
+permalink: agent-memory/个人随笔站点/site/themes/hugo-xmin/license
+title: LICENSE
+type: note
+---
+
 The MIT License (MIT)
 
 Copyright (c) 2017-2022 Yihui Xie
