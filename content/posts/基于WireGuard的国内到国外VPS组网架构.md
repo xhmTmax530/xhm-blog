@@ -1,6 +1,6 @@
 ---
 title: "基于WireGuard的国内到国外VPS组网架构"
-date: 2025-11-13T18:05:00+08:10 # 请使用一个比前一篇文章略晚的时间
+date: 2025-11-13T18:05:00+08:00
 draft: false 
 categories: ["网络技术"] # 👈 关键：确保分类名称完全匹配
 tags: ["WireGuard", "VPN", "VPS", "组网"] # 你的文章关键词

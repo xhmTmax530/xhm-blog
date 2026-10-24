@@ -1,6 +1,6 @@
 ---
 title: AOP切面(java新手)
-date: 2025-11-23 18:30:00+08:00
+date: 2025-11-23T18:30:00+08:00
 draft: false
 categories:
 - 编程开发
