@@ -1,9 +1,13 @@
 ---
-title: "CC链跟踪"
-date: 2025-11-13T19:00:00+08:00
-draft: false 
-categories: ["网络安全"] # 👈 关键：这次是“网络安全”
-tags: ["网络安全", "漏洞", "攻击链"] # 推荐的标签
+title: CC链跟踪
+date: 2025-11-13 19:00:00+08:00
+draft: false
+categories: ["技术"]
+tags:
+- 网络安全
+- 漏洞
+- 攻击链
+permalink: agent-memory/个人随笔站点/site/content/posts/cc-链跟踪
 ---
 
 # 你的文章正文内容，从这里开始...

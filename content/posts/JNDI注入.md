@@ -2,8 +2,7 @@
 title: JNDI注入
 date: 2025-11-21 12:44:00+08:00
 draft: false
-categories:
-- 网络安全
+categories: ["技术"]
 tags:
 - Java
 - JNDI注入

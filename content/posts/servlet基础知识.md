@@ -2,8 +2,7 @@
 title: servlet基础知识
 date: 2025-11-17 23:58:00+08:00
 draft: false
-categories:
-- 编程开发
+categories: ["技术"]
 tags:
 - Java
 - Servlet

@@ -2,7 +2,7 @@
 title: "Gemini Cli 新手教程"
 date: 2025-11-28T12:35:00+08:00
 draft: false
-categories: ["人工智能"]
+categories: ["技术"]
 tags: ["Gemini Cli", "agent", "大模型", "命令行编程工具", "新手小白"]
 ---
 # Gemini Cli 新手教程

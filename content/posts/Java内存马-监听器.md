@@ -2,7 +2,7 @@
 title: "Java内存马-监听器" # 新文章标题
 date: 2025-11-17T16:30:00+08:00
 draft: false 
-categories: ["网络安全"] # 🎯 关键：设置为目标分类
+categories: ["技术"]
 tags: ["网络安全", "Java", "内存马"] # 建议添加相关标签
 mermaid: true # ⭐ 关键：启用 Mermaid 图表支持
 ---

@@ -2,7 +2,7 @@
 title: "Gemini API File Search"
 date: 2025-11-26T18:00:00+08:00
 draft: false 
-categories: ["人工智能"]
+categories: ["技术"]
 tags: ["Google", "检索增强生成", "RAG", "人工智能", "Gemini API File Search"]
 ---
 

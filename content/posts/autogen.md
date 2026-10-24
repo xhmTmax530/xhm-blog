@@ -2,7 +2,7 @@
 title: "AutoGen小白篇(Windows)"
 date: 2025-11-22T12:35:00+08:00
 draft: false
-categories: ["人工智能"]
+categories: ["技术"]
 tags: ["AutoGen", "agent", "大模型", "工作流", "worker"]
 ---
 

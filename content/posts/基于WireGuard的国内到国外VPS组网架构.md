@@ -2,8 +2,7 @@
 title: 基于WireGuard的国内到国外VPS组网架构
 date: 2025-11-13 18:05:00+08:00
 draft: false
-categories:
-- 网络技术
+categories: ["技术"]
 tags:
 - WireGuard
 - VPN

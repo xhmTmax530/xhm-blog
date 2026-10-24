@@ -2,7 +2,7 @@
 title: "SuperClaude.md"
 date: 2025-11-18T17:35:00+08:00
 draft: false
-categories: ["人工智能"]
+categories: ["技术"]
 tags: ["SuperClaude", "Claude", "代码审计", "漏洞挖掘", "AI安全"]
 ---
 # SuperClaude中文使用手册

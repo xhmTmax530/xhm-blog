@@ -1,15 +1,14 @@
 ---
 title: AOP切面(java新手)
-date: 2025-11-23T18:30:00+08:00
+date: 2025-11-23 18:30:00+08:00
 draft: false
-categories:
-- 编程开发
+categories: ["技术"]
 tags:
 - Java
 - AOP切面
 - Web开发
 - 基础编程
-permalink: agent-memory/个人随笔站点/资料库/site-src/content/posts/aop-切面
+permalink: agent-memory/个人随笔站点/资料库/site-src/content/posts/aop-切面-1
 ---
 
 # AOP切面(java新手)

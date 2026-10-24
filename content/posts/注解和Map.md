@@ -2,8 +2,7 @@
 title: 注解和Map(新手理解)
 date: 2025-11-21 10:50:00+08:00
 draft: false
-categories:
-- 编程开发
+categories: ["技术"]
 tags:
 - Java
 - java注解
