@@ -1,10 +1,18 @@
 ---
-title: "JNDI注入"
-date: 2025-11-21T12:44:00+08:00
-draft: false 
-categories: ["网络安全"]
-tags: ["Java", "JNDI注入", "Web安全", "基础编程", "网络安全"]
+title: JNDI注入
+date: 2025-11-21 12:44:00+08:00
+draft: false
+categories:
+- 网络安全
+tags:
+- Java
+- JNDI注入
+- Web安全
+- 基础编程
+- 网络安全
+permalink: agent-memory/个人随笔站点/site/content/posts/jndi-注入
 ---
+
 # JNDI注入
 
 ## **什么是内存马**

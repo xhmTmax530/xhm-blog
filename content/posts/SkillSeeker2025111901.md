@@ -1,10 +1,18 @@
 ---
-title: "Skill Seeker中文使用手册"
-date: 2025-11-19T17:00:00+08:00
+title: Skill Seeker中文使用手册
+date: 2025-11-19 17:00:00+08:00
 draft: false
-categories: ["人工智能"]
-tags: ["Skill Seeker", "Claudecode", "Claude Skill", "爬虫", "MCP服务器"]
+categories:
+- 人工智能
+tags:
+- Skill Seeker
+- Claudecode
+- Claude Skill
+- 爬虫
+- MCP服务器
+permalink: agent-memory/个人随笔站点/site/content/posts/skill-seeker2025111901
 ---
+
 # Skill Seeker中文使用手册
 
 ## 概述：Skill Seeker 是什么？
