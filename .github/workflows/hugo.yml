@@ -29,6 +29,8 @@ jobs:
           extended: true
       - name: Build
         run: hugo --minify --baseURL "${{ vars.SITE_BASEURL || 'https://blog.agentxx.xyz/' }}"
+      - name: Drop admin from public build (admin stays LAN-only on N1)
+        run: rm -rf public/admin
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
