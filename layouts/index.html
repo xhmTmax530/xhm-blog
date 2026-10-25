@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<h2>分类</h2>
+<ul>
+  {{ range .Site.Taxonomies.categories.ByCount }}
+  <li>
+    <span class="date">{{ .Count }} 篇</span>
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+<h2>最近写的</h2>
+<ul>
+  {{ range first 8 (where .Site.RegularPages "Section" "posts") }}
+  <li>
+    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+<p><a href="/archives/">查看全部文章 →</a></p>
+
+{{ partial "footer.html" . }}
