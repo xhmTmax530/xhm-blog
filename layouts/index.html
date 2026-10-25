@@ -4,10 +4,11 @@
 
 <h2>分类</h2>
 <ul>
-  {{ range .Site.Taxonomies.categories.ByCount }}
+  {{ range slice "技术" "生活" }}
+  {{ $pages := index $.Site.Taxonomies.categories . }}
   <li>
-    <span class="date">{{ .Count }} 篇</span>
-    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+    <span class="date">{{ if $pages }}{{ len $pages }} 篇{{ else }}0 篇{{ end }}</span>
+    <a href="/categories/{{ . }}/">{{ . }}</a>
   </li>
   {{ end }}
 </ul>
@@ -21,6 +22,6 @@
   </li>
   {{ end }}
 </ul>
-<p><a href="/archives/">查看全部文章 →</a></p>
+<p><a href="/posts/">查看全部文章 →</a></p>
 
 {{ partial "footer.html" . }}

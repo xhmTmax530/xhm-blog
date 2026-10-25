@@ -1,4 +1,4 @@
-import json,urllib.request,io,tarfile,os
+import json,urllib.request,io,tarfile,os,time
 pt="http://192.168.31.183:9000"
 tok=json.loads(urllib.request.urlopen(urllib.request.Request(f"{pt}/api/auth",
   data=json.dumps({"Username":"admin","Password":"Nsfocus@2027xhmljj"}).encode(),
@@ -10,19 +10,26 @@ def api(p,d=None,m="GET",raw=False):
     return urllib.request.urlopen(r,timeout=180)
 for c in json.load(api("/containers/json?all=1")):
     if c["Names"][0].startswith("/blogseed"):
-        api("/containers/%s?force=1&v=1" % c["Id"], m="DELETE")
+        api("/containers/%s?force=1&v=1"%c["Id"],m="DELETE")
 cid=json.load(api("/containers/create?name=blogseed",json.dumps({
-  "Image":"docker.m.daocloud.io/library/node:22-alpine","Cmd":["sleep","90"],
+  "Image":"docker.m.daocloud.io/library/node:22-alpine","Cmd":["sleep","120"],
   "HostConfig":{"Binds":["blog_public:/out"]}}).encode(),"POST"))["Id"]
-api("/containers/%s/start" % cid, b"", "POST")
+api("/containers/%s/start"%cid,b"","POST")
+time.sleep(1)
+# 清空旧文件，避免已删除的页面残留
+ex=json.load(api("/containers/%s/exec"%cid,json.dumps({
+  "AttachStdout":False,"AttachStderr":False,
+  "Cmd":["sh","-c","rm -rf /out/* /out/.[!.]* 2>/dev/null; true"]}).encode(),"POST"))["Id"]
+api("/exec/%s/start"%ex,json.dumps({"Detach":True,"Tty":False}).encode(),"POST")
+time.sleep(1)
 src=io.BytesIO(open("/tmp/pub.tgz","rb").read()); buf=io.BytesIO()
 out=tarfile.open(fileobj=buf,mode="w")
 with tarfile.open(fileobj=src,mode="r:gz") as t:
     for m in t.getmembers():
         m.name=m.name.lstrip("./")
         if not m.name: continue
-        out.addfile(m, t.extractfile(m) if m.isfile() else None)
+        out.addfile(m,t.extractfile(m) if m.isfile() else None)
 out.close()
-api("/containers/%s/archive?path=/out" % cid, buf.getvalue(), "PUT", raw=True)
-api("/containers/%s?force=1&v=1" % cid, m="DELETE")
+api("/containers/%s/archive?path=/out"%cid,buf.getvalue(),"PUT",raw=True)
+api("/containers/%s?force=1&v=1"%cid,m="DELETE")
 print("deployed", os.path.getsize("/tmp/pub.tgz"), "bytes")

@@ -1,9 +1,9 @@
 ---
-
 title: 解构 Anthropic Agent 标准：深入理解并构建 Claude Skills
 date: 2026-02-03 15:30:00+08:00
 draft: false
-categories: ["技术"]
+categories:
+- 人工智能
 tags:
 - Anthropic Agent
 - Claude Skills

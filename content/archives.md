@@ -1,7 +1,5 @@
 ---
-
 title: 归档
-categories: ["技术"]
 layout: archives
 permalink: agent-memory/个人随笔站点/site/content/archives
 ---

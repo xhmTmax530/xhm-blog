@@ -25,10 +25,6 @@ enableEmoji = true
   url = "/categories/"
   weight = 30
 [[menus.main]]
-  name = "归档"
-  url = "/archives/"
-  weight = 40
-[[menus.main]]
   name = "关于"
   url = "/about/"
   weight = 50
