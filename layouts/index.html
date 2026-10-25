@@ -7,8 +7,13 @@
   {{ range slice "技术" "生活" }}
   {{ $pages := index $.Site.Taxonomies.categories . }}
   <li>
-    <span class="date">{{ if $pages }}{{ len $pages }} 篇{{ else }}0 篇{{ end }}</span>
+    {{ if $pages }}
+    <span class="date">{{ len $pages }} 篇</span>
     <a href="/categories/{{ . }}/">{{ . }}</a>
+    {{ else }}
+    <span class="date">0 篇</span>
+    <span>{{ . }}（还没写）</span>
+    {{ end }}
   </li>
   {{ end }}
 </ul>
