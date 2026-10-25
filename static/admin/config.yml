@@ -8,9 +8,6 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-locale: zh_Hans
-site_url: https://blog.agentxx.xyz
-display_url: https://blog.agentxx.xyz
 
 collections:
   - name: posts
