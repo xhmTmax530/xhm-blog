@@ -1,6 +1,7 @@
 ---
+
 title: 首页
-categories: [\"技术\"]
+categories: ["技术"]
 permalink: agent-memory/个人随笔站点/site/content/index
 ---
 
