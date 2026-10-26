@@ -9,7 +9,6 @@ tags:
 - Web安全
 - 基础编程
 - 网络安全
-permalink: agent-memory/个人随笔站点/site/content/posts/jndi-注入
 ---
 
 # JNDI注入

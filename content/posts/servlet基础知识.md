@@ -8,7 +8,6 @@ tags:
 - Servlet
 - Web开发
 - 编程
-permalink: agent-memory/个人随笔站点/site/content/posts/servlet-基础知识
 ---
 
 # servlet基础知识

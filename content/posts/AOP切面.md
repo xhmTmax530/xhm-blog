@@ -8,7 +8,6 @@ tags:
 - AOP切面
 - Web开发
 - 基础编程
-permalink: agent-memory/个人随笔站点/资料库/site-src/content/posts/aop-切面-1
 ---
 
 # AOP切面(java新手)

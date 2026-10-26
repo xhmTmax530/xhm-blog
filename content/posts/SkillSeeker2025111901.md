@@ -9,7 +9,6 @@ tags:
 - Claude Skill
 - 爬虫
 - MCP服务器
-permalink: agent-memory/个人随笔站点/site/content/posts/skill-seeker2025111901
 ---
 
 # Skill Seeker中文使用手册

@@ -9,7 +9,6 @@ tags:
 - Web开发
 - 基础编程
 - HashMap
-permalink: agent-memory/个人随笔站点/site/content/posts/注解和-map
 ---
 
 # 注解和Map(新手理解)

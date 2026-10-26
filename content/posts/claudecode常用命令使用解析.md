@@ -8,7 +8,6 @@ tags:
 - Claude
 - 安全工具
 - 命令行
-permalink: agent-memory/个人随笔站点/site/content/posts/claudecode-常用命令使用解析
 ---
 
 # Claude Code 常用命令使用解析
