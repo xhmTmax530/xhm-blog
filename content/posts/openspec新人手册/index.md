@@ -3,7 +3,7 @@ title: openspec新人手册
 date: 2025-12-13 15:30:00+08:00
 draft: false
 categories:
-- 人工智能
+- 技术
 tags:
 - openspec
 - spec
